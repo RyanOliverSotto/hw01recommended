@@ -1,24 +1,34 @@
 <!-- CSS Stylesheets with Relative Paths -->
-
+<!-- Homework 2: Let's start by adding Bootstrap elements to the original page -->
 <!DOCTYPE html>
 <html lang="en-us">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-wdith, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Homework1 Basic Porfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-wdith, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homework2 Bootstrap Portfolio</title>
 
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+    <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+
+
+    <!-- We link our html to the Bootstrap CDN -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-    
 </head>
 
 <body>
     <!--This is my header area which will repeat on all three html files-->
-    <header>
+    <!--<header>
         <div class="wrapper">
             <h1>Ryan Oliver Sotto</h1>
             <nav>
@@ -32,66 +42,267 @@
                     <li>
                         <a href="contact.html">Contact</a>
                     </li>
-                </ul>    
+                </ul>
             </nav>
         </div>
-    </header>
+    </header>-->
+    <!-- Container Div -->
+    <div class="container">
+
+        <!-- Section 1: Navbar-->
+        <nav class="navbar navbar-default">
+
+            <!-- Place Fluid Container in Navbar -->
+            <div class="container-fluid">
+
+                <!-- Designate a navbar heading -->
+                <div class="navbar-header">
+
+                    <!-- Our brand / logo -->
+                    <a class="navbar-brand" style="color:black;">Ryan Oliver Sotto</a>
+                </div>
+
+                <!-- More links -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+    </div>
+    <!--/.container-fluid -->
+    </nav>
 
     <!--Begin main content of this AboutMe.html-->
-    <div class="wrapper">
+
+    <div class="container">
+        <div class="row">
+            <class class="col-md-8">
+                <section id="lcolumn">
+                    <div>
+                        <h3>About Me</h3>
+                        <img src="https://media.licdn.com/dms/image/C5603AQHQdYRKzPCaFQ/profile-displayphoto-shrink_200_200/0?e=1526504400&v=alpha&t=28J3O54iPaPi-dyxeFZZu9im1ZuX3oWIoa4hPqlk19M"
+                            alt="Picture of Ryan O Sotto" class="hwimage" />
+                        <p> My first Bachelors in Science was in psychology. I was always interested in theories that involved
+                            motivation, cognition, and emotions. Let me bring up a theory I recall learning because I recently
+                            experienced this phenomenon in 2016; it's called flashbulb memory. "A flashbulb memory is a highly
+                            detailed, exceptionally vivid 'snapshot' of the moment and circumstances in which a piece of
+                            surprising and consequential (or emotionally arousing) news was heard." I have had instances
+                            of flashbulb memories dotted in various events in my life.</p>
+                        <p> I can recall exact details of where I was, what I was doing, the weather, when the Space Shuttle
+                            Challenger exploded (yes I am old.) I can recall every detail about my circumstances when I learned
+                            about the sudden passing of my beloved grandfather when I was in my 20's. I recall bright and
+                            vivid details when I came to learn about the deaths of Michael Jackson, Prince, and George Michael.
+                            Moving forward in time, I can recall the very moment, when I learned that the job I held for
+                            15+ years, the job that defined me, provided me steady income, and encapsulated my entire existence
+                            for over a decade was soon to end. I was working remotely that sunny early spring afternoon.
+                            It was one of those atypical Chicago days with temperatures soaring higher than usual for the
+                            season. I had opened the windows to dispel the stale air of my home office. I was about to wrap
+                            up my day and prepare for tomorrow's agendas when I saw at 3:46PM CST, a meeting invite in my
+                            Outlook. The participants were only me, my supervisor Catherine, and an unknown associate Crystal,
+                            whom I looked up in our resource library as an HR rep from our HQ in St Louis. I knew immediately
+                            something was amiss. I quickly instant messaged my boss.</p>
+
+                        <blockquote>Me: "Cat, is everything all right? I see I have a meeting with you in 15 minutes."</blockquote>
+                        <blockquote>Cat: "Ryan, I'm afraid it's bad news."</blockquote>
+
+                        <p> I know thousands of Americans have been laid off, but this event hit me very hard. I have had the
+                            good fortune of lasting at the compnay as long as I did and achieving the accomplishments I have
+                            earned. I could have easily gotten depressed and begin a fast downward spiral into madness, but
+                            not I. April 26th 2016 was the last time I clocked in as the team lead of SCRM, the position
+                            I held for years. It was time for some new beginnings. Coicidentally, PokeMon Go debutted the
+                            very same season as my lay off. I have some pretty rare Pokemon and a cracked IPhone to prove
+                            it. There is that overstated saying, "When life gives you lemons, make lemonade." I know's it's
+                            <em>cliche</em>, but it doesn't diminish the power of its simple philosphy. And make lemonaid I did,
+                            gallons. I was able to secure a 10k grant to return to school for some retraining where was I
+                            able to leverage my experience and education to obtain several flavors of IT Project Management
+                            certifications. I immersed myself in the professional PM community here in Chicago, meeting so
+                            many wonderful new associates, some of whom I now consider friends. My curiosity doesn't end
+                            with project management. I was always interested in learning about website development and coding.
+                            When I came to learn about Northwestern's fullstack coding bootcamp, I jumped on the opportunity.
+                            Maybe I can insert myself into the development ecosystem as I have in project management. I think
+                            the two would be a wonderful marriage of skillsets and expertise.</p>
+
+                        <p> So yes, maybe when I receive my certificate of completion from this program, a new flashbulb memory
+                            will be logged in my mind.</p>
+
+
+
+                    </div>
+                </section>
+            </class>
+            <class class="col-md-4">
+                <aside id="rcolumn">
+                    <div>
+                        <h3>Connect with me</h3>
+                        <ul>
+                            <li>
+                                <a href="https://www.linkedin.com/in/ryanoliversotto/" target="_blank">
+                                    <img src="assets/if_linkedin_834713.png" alt="LinkedIn" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/ryan.sotto" target="_blank">
+                                    <img src="assets/if_square-facebook.png" alt="Facebook" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://stackoverflow.com/users/9374979/ryan-sotto" target="_blank">
+                                    <img src="assets/if_stackoverflow_287529.png" alt="StackOverflow" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/RyanOliverSotto">
+                                    <img src="assets/if_twitter_410515.png" alt="Twitter" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/RyanOliverSotto">
+                                    <img src="assets/if_github_253591.png" alt="GitHUb" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://youtube.com">
+                                    <img src="assets/if_youtube2_252069.png" alt="GitHUb" />
+                                </a>
+                            </li>
+                    </div>
+                </aside>
+            </class>
+        </div>
+
+
+
+
+    </div>
+    <!-- <div class="wrapper">
         <section id="lcolumn">
             <h3>About me</h3>
             <img src="https://media.licdn.com/dms/image/C5603AQHQdYRKzPCaFQ/profile-displayphoto-shrink_200_200/0?e=1526504400&v=alpha&t=28J3O54iPaPi-dyxeFZZu9im1ZuX3oWIoa4hPqlk19M"
-            alt="Picture of Ryan O Sotto" class="hwimage"/>
-            <p>    My first Bachelors in Science was in psychology. I was always interested in theories that involved motivation, cognition, and emotions. Let me bring up a theory I recall learning
-                    because I recently experienced this phenomenon in 2016; it's called flashbulb memory. "A flashbulb memory is a highly detailed, exceptionally vivid 'snapshot' of the moment
-                    and circumstances in which a piece of surprising and consequential (or emotionally arousing) news was heard." I have had instances of flashbulb memories dotted in various events 
-                    in my life.</p>
-                    <p>     I can recall exact details of where I was, what I was doing, the weather, when the Space Shuttle Challenger exploded (yes I am old.) I can recall every detail about
-                    my circumstances when I learned about the sudden passing of my beloved grandfather when I was in my 20's. I recall bright and vivid details when I 
-                    came to learn about the deaths of Michael Jackson, Prince, and George Michael. Moving forward in time, I can recall the very moment, when I learned that the job I held
-                    for 15+ years, the job that defined me, provided me steady income, and encapsulated my entire existence for over a decade was soon to end. 
-                    I was working remotely that sunny early spring afternoon. It was one of those atypical Chicago days with temperatures soaring higher than usual for the season. I had opened the 
-                    windows to dispel the stale air of my home office. I was about to wrap up my day and prepare for tomorrow's agendas when I saw at 3:46PM CST, a meeting invite in my Outlook.
-                    The participants were only me, my supervisor Catherine, and an unknown associate Crystal, whom I looked up in our resource library as an HR rep from our HQ in St Louis. I knew 
-                    immediately something was amiss. I quickly instant messaged my boss.</p>
-                    
-                    <blockquote>Me: "Cat, is everything all right? I see I have a meeting with you in 15 minutes."</blockquote>
-                    <blockquote>Cat: "Ryan, I'm afraid it's bad news."</blockquote>
-           
-                    <p>    I know thousands of Americans have been laid off, but this event hit me very hard. I have had the good fortune of lasting at the compnay as long as I did and achieving the accomplishments I have earned. I could have easily
-                    gotten depressed and begin a fast downward spiral into madness, but not I. April 26th 2016 was the last time I clocked in as the team lead of SCRM, the position I held for years.
-                    It was time for some new beginnings. Coicidentally, PokeMon Go debutted the very same season as my lay off. I have some pretty rare Pokemon and a cracked IPhone to prove it. There 
-                    is that overstated saying, "When life gives you lemons, make lemonade." I know's it's <em>cliche</em>, but it doesn't diminish the power of its simple philosphy. And make lemonaid I
-                    did, gallons. I was able to secure a 10k grant to return to school for some retraining where was I able to leverage my experience and education to obtain several flavors of
-                    IT Project Management certifications. I immersed myself in the professional PM community here in Chicago, meeting so many wonderful new associates, some of whom I now consider 
-                    friends. My curiosity doesn't end with project management. I was always interested in learning about website development and coding. When I came to learn about Northwestern's
-                    fullstack coding bootcamp, I jumped on the opportunity. Maybe I can insert myself into the development ecosystem as I have in project management. I think the two would be a 
-                    wonderful marriage of skillsets and expertise.</p>
-                    
-                    <p>    So yes, maybe when I receive my certificate of completion from this program, a new flashbulb memory will be logged in my mind.</p>        </section>
+                alt="Picture of Ryan O Sotto" class="hwimage" />
+            <p> My first Bachelors in Science was in psychology. I was always interested in theories that involved motivation,
+                cognition, and emotions. Let me bring up a theory I recall learning because I recently experienced this phenomenon
+                in 2016; it's called flashbulb memory. "A flashbulb memory is a highly detailed, exceptionally vivid 'snapshot'
+                of the moment and circumstances in which a piece of surprising and consequential (or emotionally arousing)
+                news was heard." I have had instances of flashbulb memories dotted in various events in my life.</p>
+            <p> I can recall exact details of where I was, what I was doing, the weather, when the Space Shuttle Challenger exploded
+                (yes I am old.) I can recall every detail about my circumstances when I learned about the sudden passing
+                of my beloved grandfather when I was in my 20's. I recall bright and vivid details when I came to learn about
+                the deaths of Michael Jackson, Prince, and George Michael. Moving forward in time, I can recall the very
+                moment, when I learned that the job I held for 15+ years, the job that defined me, provided me steady income,
+                and encapsulated my entire existence for over a decade was soon to end. I was working remotely that sunny
+                early spring afternoon. It was one of those atypical Chicago days with temperatures soaring higher than usual
+                for the season. I had opened the windows to dispel the stale air of my home office. I was about to wrap up
+                my day and prepare for tomorrow's agendas when I saw at 3:46PM CST, a meeting invite in my Outlook. The participants
+                were only me, my supervisor Catherine, and an unknown associate Crystal, whom I looked up in our resource
+                library as an HR rep from our HQ in St Louis. I knew immediately something was amiss. I quickly instant messaged
+                my boss.</p>
+
+            <blockquote>Me: "Cat, is everything all right? I see I have a meeting with you in 15 minutes."</blockquote>
+            <blockquote>Cat: "Ryan, I'm afraid it's bad news."</blockquote>
+
+            <p> I know thousands of Americans have been laid off, but this event hit me very hard. I have had the good fortune
+                of lasting at the compnay as long as I did and achieving the accomplishments I have earned. I could have
+                easily gotten depressed and begin a fast downward spiral into madness, but not I. April 26th 2016 was the
+                last time I clocked in as the team lead of SCRM, the position I held for years. It was time for some new
+                beginnings. Coicidentally, PokeMon Go debutted the very same season as my lay off. I have some pretty rare
+                Pokemon and a cracked IPhone to prove it. There is that overstated saying, "When life gives you lemons, make
+                lemonade." I know's it's
+                <em>cliche</em>, but it doesn't diminish the power of its simple philosphy. And make lemonaid I did, gallons.
+                I was able to secure a 10k grant to return to school for some retraining where was I able to leverage my
+                experience and education to obtain several flavors of IT Project Management certifications. I immersed myself
+                in the professional PM community here in Chicago, meeting so many wonderful new associates, some of whom
+                I now consider friends. My curiosity doesn't end with project management. I was always interested in learning
+                about website development and coding. When I came to learn about Northwestern's fullstack coding bootcamp,
+                I jumped on the opportunity. Maybe I can insert myself into the development ecosystem as I have in project
+                management. I think the two would be a wonderful marriage of skillsets and expertise.</p>
+
+            <p> So yes, maybe when I receive my certificate of completion from this program, a new flashbulb memory will be logged
+                in my mind.</p>
+        </section>
         <aside id="rcolumn">
             <h3>Connect with me</h3>
             <ul>
-                <li><a href="https://www.linkedin.com/in/ryanoliversotto/" target="_blank">
-                <img src="assets/if_linkedin_834713.png" alt="LinkedIn"/></a></li>
-                <li><a href="https://www.facebook.com/ryan.sotto" target="_blank"><img src="assets/if_square-facebook.png" alt="Facebook"/></a></li>    
-                <li><a href="https://stackoverflow.com/users/9374979/ryan-sotto" target="_blank">
-                <img src="assets/if_stackoverflow_287529.png" alt="StackOverflow"/></a></li>
-                <li><a href="https://twitter.com/RyanOliverSotto"><img src="assets/if_twitter_410515.png" alt="Twitter" /></a></li>    
-                <li><a href="https://github.com/RyanOliverSotto"><img src="assets/if_github_394189.png" alt="GitHUb" /></a></li>                   
-                    
-            </aside>
-    </div>
+                <li>
+                    <a href="https://www.linkedin.com/in/ryanoliversotto/" target="_blank">
+                        <img src="assets/if_linkedin_834713.png" alt="LinkedIn" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/ryan.sotto" target="_blank">
+                        <img src="assets/if_square-facebook.png" alt="Facebook" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://stackoverflow.com/users/9374979/ryan-sotto" target="_blank">
+                        <img src="assets/if_stackoverflow_287529.png" alt="StackOverflow" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/RyanOliverSotto">
+                        <img src="assets/if_twitter_410515.png" alt="Twitter" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/RyanOliverSotto">
+                        <img src="assets/if_github_253591.png" alt="GitHUb" />
+                    </a>
+                </li>
+
+        </aside>
+    </div> -->
 
     <!--Clearfix hack is added to assist in formatting, W3Schools-->
     <div class="clearfix"></div>
 
-    <!--Footer is added and will be repeated in all three html files-->
+    <!--Footer is added and will be repeated in all three html files
     <footer>
         &copy;2018 Ryan Oliver Sotto NU Coding Bootcamp®
-    </footer>
+    </footer>-->
 
+    <!-- Insert Bootstrap footer -->
+    <!-- Container Div 
+    <div class="container"></div>
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+        <footer>
+            <h4>Copyright 2018</h4>
+        </footer>
+    </nav>
+    </div>
+    /.container-fluid -->
+ <!-- Container Div -->
+ <div class="container">
+
+    <!-- Section 1: Navbar-->
+    <footer>
+    <nav class="navbar navbar-default">
+
+        <!-- Place Fluid Container in Navbar -->
+        <div class="container-fluid">
+            <!-- Designate a navbar heading -->
+            <div class="navbar-default">
+                Copyright 2018
+            </div>
+        </div>
+        <!--/.nav-collapse --></footer>
+</div>
+<!--/.container-fluid -->
+</nav>
+
+    <!-- jQuery, javascript file for the Bootstrap's javascript file to function -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap's javascript file that allows the dropdown menu to work  -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    </div>
 </body>
-    
+
 </html>

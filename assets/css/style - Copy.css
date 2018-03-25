@@ -6,13 +6,17 @@ aside ul li a img{
     height: 40%;
     width: 40%;
     float: left;
-    padding: 15px 15px 15px 15px;
+    padding: 5px 5px 5px 5px;
 }
 
 aside{
     text-align: center;
 }
-/*
+
+blockquote{
+    margin: 10px 30px 10px 30px;
+}
+
 body{    
     background: url("vintage-concrete.png") repeat;
     font-family: Arial, Helvetica, sans-serif;
@@ -20,20 +24,16 @@ body{
     overflow:auto;
     columns: #777777;
 }
-*/
-body{
-    background: url("../vintage-concrete.png") repeat;
-    width: 960px;
-}
 
 footer{
     background: #666666;
     border-top: 3px solid teal;
     color: #cccccc;
     text-align: center;
-    margin-top: 20px;
+    padding: 40px;
+    margin-top: 30px;
 }
-/*
+
 form button{
     background: #4aaaa5;
     color: #ffffff;
@@ -61,18 +61,13 @@ form input, textarea{
 textarea{
     height: 300px;
 }
-*/
+
 h1, h2, h3, h4, h5, h6{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #4aaaa5;
     font-weight: bold;
 }
 
-.navbar-brand{
-    background-color: teal;
-    color: black;
-}
-/*
 header{
     background: white;
     border-bottom: 3px solid #cccccc;
@@ -159,7 +154,7 @@ textarea{
     width: 960px;
     margin: 0 auto;
 }
-*/
+
 .clearfix{
     display:block;
     clear: both;
@@ -223,7 +218,7 @@ textarea{
 #rcolumn ul li img:hover{
     transform:rotate(360deg);
 }
-/*
+
 #myport1{
     background: url("../tech1.jpg");
     background-size: cover;
@@ -258,4 +253,3 @@ textarea{
     background-size: cover;
     background-repeat: no-repeat;
 }
-*/
